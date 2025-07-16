@@ -1,0 +1,570 @@
+@font-face {
+    font-family: 'MinhaFonte';
+    src: url('vogue-sans-semi-bold.ttf') format('truetype');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100%;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    font-family: 'MinhaFonte', sans-serif;
+}
+
+section {
+    min-height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+/* section.visible {
+    opacity: 1;
+    transform: translateY(0);
+} */
+
+.navbar {
+    background-color: black;
+    margin-top: 1%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    z-index: 1000;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 120%;
+}
+
+.navbar a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+
+.inicio {
+    background: linear-gradient(to bottom right, #dddddd, #ffffff);
+
+}
+
+.servico {
+    background: #ffffff;
+}
+
+.sobre {
+    background: linear-gradient(to bottom right, #dddddd, #ffffff);
+}
+
+.contato {
+    background: #ffffff;
+}
+
+footer {
+    scroll-snap-align: none;
+    height: auto;
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.inicio .content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    padding-top: 10%;
+
+
+}
+
+.inicio .content img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 500px;
+}
+
+.inicio .content h1 {
+    font-size: 600%;
+    font-weight: bold;
+    padding-left: 5%;
+
+}
+
+.container {
+    font-family: 'MinhaFonte', sans-serif;
+}
+
+.imagem1 {
+    width: 30%;
+    height: 30%;
+    background-color: rgb(255, 255, 255);
+    margin-left: 10%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 500px;
+}
+
+.pt1 {
+    width: 50%;
+}
+
+.pt1 h2 {
+    font-size: 200%;
+    padding-left: 5%;
+}
+
+.ptb {
+    background-color: black;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 60%;
+}
+
+.ptb p {
+    padding-right: 2%;
+}
+
+.contato .content {
+    font-family: 'MinhaFonte', sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+iframe {
+    width: 80%;
+    border-radius: 50px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.contato .txt {
+    height: 20%;
+    padding-top: 5%;
+}
+
+.contato .txt h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 300%;
+    margin-bottom: 2%;
+}
+
+.contato .txt h2 {
+    text-align: center;
+    font-size: 120%;
+}
+
+.contato .txt h3 {
+    width: 100%;
+    text-align: center;
+    padding-top: 5%;
+    font-size: 200%;
+    text-decoration: underline;
+    color: black;
+    margin-bottom: 2%;
+}
+
+.contato .txt a {
+    color: black;
+}
+
+.mapa {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65%;
+}
+
+.servico h1 {
+    padding: 6%;
+    width: 100%;
+    text-align: center;
+    font-size: 300%;
+    margin-bottom: 2%;
+}
+
+.servico .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.servico .content ul {
+    list-style: none;
+    padding-right: 4rem;
+    text-align: right;
+}
+
+.servico .content li {
+    position: relative;
+    margin-bottom: 1rem;
+    padding-right: 1.5rem;
+    font-size: 150%;
+}
+
+.servico .content li::after {
+    content: "•";
+    position: absolute;
+    right: 0;
+    color: black;
+    font-size: 1.5rem;
+    font-size: 150%;
+}
+
+.sobre .content {
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+
+.sobre .content h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.sobre .content ul {
+    list-style-type: disc;
+    padding-left: 4rem;
+}
+
+.sobre .content li {
+    margin-bottom: 1rem;
+}
+
+.sobre h2 {
+    font-size: 200%;
+    margin-bottom: 5%;
+}
+
+
+.servico .content img {
+    width: 100%;
+    min-height: 100%;
+}
+
+.imagem2 {
+    width: 25%;
+    height: 20%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    margin-left: 20%;
+    margin-right: 10%;
+}
+
+.sobre .content img {
+    width: 100%;
+    min-height: 100%;
+    border-radius: 500px;
+}
+
+.sobre h1 {
+    padding: 6%;
+    width: 100%;
+    text-align: center;
+    font-size: 300%;
+    margin-bottom: 2%;
+}
+
+.sobre .content {
+    width: 100%;
+    display: flex;
+
+}
+
+.imagem3 {
+    width: 40%;
+    height: 20%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    margin-left: 20%;
+    margin-right: 10%;
+    border-radius: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.whatsapp-fixado {
+    position: fixed;
+    bottom: 70px;
+    right: 30px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    z-index: 9999;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-fixado:hover {
+    transform: scale(1.05);
+}
+
+.whatsapp-fixado img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+
+    .sobre h1 {
+        padding: 0;
+        padding-top: 10%;
+        padding-bottom: 2%;
+    }
+
+    .contato h1 {
+        padding: 0;
+        padding-top: 10%;
+        padding-bottom: 2%;
+    }
+
+    .servico h1 {
+        padding: 0;
+        padding-top: 10%;
+        padding-bottom: 2%;
+    }
+
+    .servico ul {
+
+        padding-bottom: 10%;
+    }
+
+    .content {
+        padding: 0%;
+    }
+
+    .inicio .content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+
+    }
+
+    .inicio .content h1,
+    .inicio .content h2 {
+        padding: 0;
+        text-align: center;
+    }
+
+    .inicio .content h1 {
+        padding-top: 20%;
+        font-size: 300%;
+        margin-bottom: 2%;
+    }
+
+    .inicio .content h2 {
+        padding-top: 10%;
+        font-size: 120%;
+        padding-bottom: 10%;
+    }
+
+    .imagem1 {
+        margin: 2rem 0;
+        width: 60%;
+        align-self: center;
+    }
+
+    .pt1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servico .content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+    }
+
+    .imagem2 {
+        margin: 1rem 0;
+        width: 80%;
+    }
+
+    .servico .content ul {
+        padding: 0;
+        text-align: center;
+    }
+
+    .servico .content li {
+        padding-right: 0;
+    }
+
+    .servico .content li::after {
+        display: none;
+    }
+
+    .sobre .content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+    }
+
+    .imagem3 {
+        margin: 1rem 0;
+        width: 80%;
+    }
+
+    .sobre .content ul {
+        padding-left: 0;
+        list-style-position: inside;
+        text-align: left;
+    }
+
+    .sobre h2 {
+        font-size: 160%;
+    }
+
+    .contato .content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+    }
+
+    .contato .txt h1,
+    .contato .txt h2,
+    .contato .txt h3 {
+        padding: 0;
+    }
+
+    .contato .txt h3 {
+        font-size: 130%;
+    }
+
+    iframe {
+        width: 90%;
+        height: 300px;
+    }
+
+    .ptb {
+        font-size: 50%;
+        justify-content: center;
+    }
+
+    .navbar {
+        background: none
+    }
+
+    section {
+        padding-top: 4%;
+    }
+
+    .contato .txt h2 {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .contato .txt {
+        margin-bottom: 20%;
+    }
+
+}
+
+
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 1001;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+}
+
+.menu-toggle div {
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    border-radius: 2px;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: black;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: none;
+    }
+
+    .nav-links a {
+        padding: 1rem;
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid #333;
+    }
+
+    .nav-links.active {
+        display: flex !important;
+    }
+
+}
